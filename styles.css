@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+
+/* CSS RESET */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* CSS VARIABLES */
+
+:root {
+  /* MEDIA SCREEN */
+
+  --MEDIA-SCREEN-SP-TEXT-MARGIN: 10%;
+  --MEDIA-SCREEN-LG-TITLE-MARGIN: 5%;
+  --MEDIA-SCREEN-LG-INFO-LR-MARGIN: 10%;
+}
+/* MEDIA QUERY */
+
+@media only screen and (max-width: 375px) {
+  /* MAIN */
+
+  main {
+    bottom: 17%;
+    padding-top: 4%;
+    padding-bottom: 10%;
+    margin: 5%;
+  }
+
+  .qr {
+    max-width: 90%;
+  }
+
+  .title {
+    margin-left: var(--MEDIA-SCREEN-SP-TEXT-MARGIN);
+    margin-right: var(--MEDIA-SCREEN-SP-TEXT-MARGIN);
+  }
+
+  .info {
+    margin-left: var(--MEDIA-SCREEN-SP-TEXT-MARGIN);
+    margin-right: var(--MEDIA-SCREEN-SP-TEXT-MARGIN);
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  /* MAIN */
+  main {
+    bottom: 25%;
+    max-width: 16%;
+  }
+
+  .qr {
+    margin-top: 2.5%;
+    max-width: 90%;
+    padding-top: 2%;
+  }
+
+  .title {
+    margin-left: var(--MEDIA-SCREEN-LG-TITLE-MARGIN);
+    margin-right: var(--MEDIA-SCREEN-LG-TITLE-MARGIN);
+  }
+
+  .info {
+    margin-bottom: 12%;
+    margin-left: var(--MEDIA-SCREEN-LG-INFO-LR-MARGIN);
+    margin-right: var(--MEDIA-SCREEN-LG-INFO-LR-MARGIN);
+  }
+}
+
+/* BODY */
+
+body {
+  align-items: center;
+  background-color: hsl(212, 45%, 89%);
+  display: flex;
+  font-family: "Outfit", sans-serif;
+  justify-content: center;
+  text-align: center;
+}
+
+/* MAIN */
+
+main {
+  background-color: #fff;
+  border-radius: 5%;
+  position: absolute;
+}
+
+.qr {
+  border-radius: 5%;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-top: 5%;
+}
+
+.info {
+  color: hsl(220, 15%, 55%);
+  font-size: 1rem;
+  margin-top: 5%;
+}
